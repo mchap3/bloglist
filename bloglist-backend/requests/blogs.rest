@@ -1,0 +1,31 @@
+GET http://localhost:3003/api/blogs
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "Test title",
+  "author": "Author Name",
+  "url": "www.somesite.com",
+  "likes": 1
+}
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwiaWQiOiI2NmIxODhmMTdhODBkZjg3YmQ1MDhmMTMiLCJpYXQiOjE3MjMxNzMyNjcsImV4cCI6MTcyMzE3Njg2N30.GUFJDjQ_D5Tuw-dHO2sZoySl_eNUa06UaGbKkgPqO-g
+
+{
+  "title": "Test with authorization",
+  "author": "Author Name",
+  "url": "www.authorizedsite.com",
+  "likes": 5
+}
+
+###
+
+DELETE http://localhost:3003/api/blogs/66b4324a2ee9f86c29c9a5cb
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwiaWQiOiI2NmIxODhmMTdhODBkZjg3YmQ1MDhmMTMiLCJpYXQiOjE3MjMxNzMyNjcsImV4cCI6MTcyMzE3Njg2N30.GUFJDjQ_D5Tuw-dHO2sZoySl_eNUa06UaGbKkgPqO-g

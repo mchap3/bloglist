@@ -1,0 +1,39 @@
+.confirmation {
+  color: blue;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.blog {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  border: solid;
+  border-width: 1.5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+input {
+  margin-left: 3px;
+}
+
+.navbar {
+  background-color: lightgrey;
+  padding: 5px;
+  margin-bottom: 5px;
+}
